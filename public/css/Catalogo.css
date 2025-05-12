@@ -1,0 +1,155 @@
+/*Clases*/
+/*General*/
+.BaseCatalogo{
+    background-color: rgb(226, 174, 29); 
+    width: 100vw;
+    min-width: 200px;
+    height: auto; 
+    padding: 25px; 
+    display: flex; 
+    flex-wrap: wrap;
+    position: relative; 
+    z-index: 2;
+}
+
+/*Secciones*/
+.SeccionesCatalogo{
+    display: flex; 
+    justify-content: left; 
+    flex-wrap: wrap; 
+    overflow: hidden; 
+    height: 18vw;
+    min-height: 190px; 
+    width: 100%; 
+}
+
+.SeccionesCatalogo div{
+    width: 30vw; 
+    min-width: 205px;
+    height: 17vw;
+    min-height: 170px; 
+    margin: 0px 12px;
+    margin-top: 10px;
+    background-color: rgba(255, 228, 196, 0.788);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.SeccionesCatalogo div:hover{
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 5px solid rgb(165, 196, 255);
+    border-radius: 15px;
+}
+
+.Vermas{
+    display: flex; 
+    padding-top: 25px; 
+    align-self: flex-end; 
+    width: 100%; 
+    justify-content: center;
+}
+
+.Vermas button{
+    border-radius: 10px;
+    border: 3px solid White;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(230, 122, 59);
+    font-size: large;
+}
+
+/*Los Mas Buscados*/
+.Buscados{
+    display: flex; 
+    justify-content: left; 
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.Buscados div{
+    width: 23vw;
+    min-height: 80px;
+    min-width: 103px;
+    height: 12vw;
+    margin: 5px;
+    background-color: rgba(255, 228, 196, 0.788);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+}
+
+.Buscados div:hover{
+    background-size: 150% 125%;
+    box-shadow: 10px 10px 10px black;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.Buscados div:hover h3{
+    border-radius: 3px;
+    background-color: rgba(19, 37, 75, 0.699);
+}
+
+.BarraDeBusqueda{
+    padding: 0px 10px; 
+    position: relative; 
+    z-index: 3; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgb(243, 203, 95); 
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4); 
+    width: 100vw; 
+    height: 40px;
+}
+
+.BarraDeBusqueda p{
+    font-size: clamp(14px, 2vw, 20px); 
+    margin-left: 10px;
+}
+
+.BarraDeBusqueda p:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: antiquewhite;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: clamp(18px, 2vw, 28px);
+}
+
+.Buscar{
+    margin-right: 10px; 
+    display: block;
+}
+
+.Buscar [type = 'search']{
+    margin: 0px; 
+    padding-left: 5px; 
+    border: 2px solid rgba(173, 173, 173, 0.32); 
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px; 
+    height: 30px; 
+    width: 15vw;
+    min-width: 100px;
+}
+
+.Buscar button{
+    margin: 0px 0px 0px 0px; 
+    height: 29px;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+    border: none; 
+    background-color: rgb(113, 203, 255);
+}
+/*Ids*/
